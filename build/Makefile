@@ -129,6 +129,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/Investment.o: src/Investment.cpp.o
+.PHONY : src/Investment.o
+
+# target to build an object file
+src/Investment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Investment.cpp.o
+.PHONY : src/Investment.cpp.o
+
+src/Investment.i: src/Investment.cpp.i
+.PHONY : src/Investment.i
+
+# target to preprocess a source file
+src/Investment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Investment.cpp.i
+.PHONY : src/Investment.cpp.i
+
+src/Investment.s: src/Investment.cpp.s
+.PHONY : src/Investment.s
+
+# target to generate assembly for a file
+src/Investment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Investment.cpp.s
+.PHONY : src/Investment.cpp.s
+
+src/Lock.o: src/Lock.cpp.o
+.PHONY : src/Lock.o
+
+# target to build an object file
+src/Lock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Lock.cpp.o
+.PHONY : src/Lock.cpp.o
+
+src/Lock.i: src/Lock.cpp.i
+.PHONY : src/Lock.i
+
+# target to preprocess a source file
+src/Lock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Lock.cpp.i
+.PHONY : src/Lock.cpp.i
+
+src/Lock.s: src/Lock.cpp.s
+.PHONY : src/Lock.s
+
+# target to generate assembly for a file
+src/Lock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Lock.cpp.s
+.PHONY : src/Lock.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/Investment.o"
+	@echo "... src/Investment.i"
+	@echo "... src/Investment.s"
+	@echo "... src/Lock.o"
+	@echo "... src/Lock.i"
+	@echo "... src/Lock.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

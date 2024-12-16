@@ -12,17 +12,10 @@ class Investment {
 
 class Stock : public Investment {
     public:
-        void showDetails() const override {
-            std::cout << "This is a stock investment.\n";
-        }
+        void showDetails() const override;
 };
 
-inline std::shared_ptr<Investment> createInvestment() {
-    return std::shared_ptr<Investment>(new Stock());
-}
-
-inline std::auto_ptr<Investment> createInvestemntAuto() {
-    return std::auto_ptr<Investment>(new Stock());
-}
+std::shared_ptr<Investment> createInvestment();
+std::auto_ptr<Investment> createInvestemntAuto();
 
 #endif 

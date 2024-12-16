@@ -16,13 +16,13 @@ int main() {
 
     std::auto_ptr<Investment> autoInvestment2 = autoInvestment;
     if(autoInvestment.get() == nullptr) {
-        std::cout << "auto_ptr behaved accordingly";
+        std::cout << "auto_ptr behaved accordingly\n";
     }
 
     std::mutex m;
     {
         Lock lock(&m);
-        std::cout << "critical section under lock management.\n";
+        std::cout << "critical section under lock management\n";
     } 
 
     return 0;

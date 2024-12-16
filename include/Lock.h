@@ -7,16 +7,11 @@
 
 class Lock : private Uncopyable {
     public:
-        explicit Lock(std::mutex *m) : mutexPtr(m, unlock) {
-            mutexPtr->lock();
-        }
+        explicit Lock(std::mutex *m);
 
     private:
         std::shared_ptr<std::mutex> mutexPtr;
 };
 
-void unlock(std::mutex* pm) {
-        pm->unlock();
-}
-
+void unlock(std::mutex* pm);
 #endif

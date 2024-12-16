@@ -7,4 +7,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(include)
 
-add_executable(main src/main.cpp)
+add_executable(main src/main.cpp src/Investment.cpp src/Lock.cpp)

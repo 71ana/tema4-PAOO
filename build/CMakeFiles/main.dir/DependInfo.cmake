@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/liana/paoo/tema4/src/Investment.cpp" "CMakeFiles/main.dir/src/Investment.cpp.o" "gcc" "CMakeFiles/main.dir/src/Investment.cpp.o.d"
+  "/home/liana/paoo/tema4/src/Lock.cpp" "CMakeFiles/main.dir/src/Lock.cpp.o" "gcc" "CMakeFiles/main.dir/src/Lock.cpp.o.d"
   "/home/liana/paoo/tema4/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
 
