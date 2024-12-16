@@ -10,7 +10,11 @@ int main() {
     std::shared_ptr<Investment> investment = createInvestment();
     investment->showDetails(); 
 
-    std::cout<<"share_ptr";
+    std::shared_ptr<Investment> investment2 = investment;
+    investment->showDetails(); 
+    investment2->showDetails();
+
+    std::cout<<"auto_ptr";
     std::auto_ptr<Investment> autoInvestment = createInvestemntAuto();
     autoInvestment->showDetails();
 
